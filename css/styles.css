@@ -1,0 +1,514 @@
+/* 
+ - FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30
+             / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+ - SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 
+            / 64 / 80 / 96 / 128 
+
+1.) TYPOGRAPHY -->
+    Roboto 
+    Font weights --> 400,500,700,900
+
+2.) COLORS -->
+Primary: #fcc419
+#e3b017
+WHITES -->
+#FFF
+#F1F1F1
+#eee
+#aaa
+#ccc
+GREYS->
+#191402
+#322705
+#654e0a
+
+Line height :
+Small: 1.1
+Large: 1.7
+
+3.) Border Radius 
+  Small: 6px
+  Large : 11px
+  
+*/
+
+/* NAVIGATION */
+
+.btn-mobile-nav {
+  border: none;
+  display: none;
+  cursor: pointer;
+  background: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #322705;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* HEADER */
+
+.header {
+  padding: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcc419;
+}
+
+.header_logo ion-icon {
+  width: 9rem;
+  height: 6rem;
+}
+
+.navigation_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navigation_link:link,
+.navigation_link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #191402;
+}
+
+.btn-header:link,
+.btn-header:visited {
+  font-size: 1.8rem;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+}
+/* HERO */
+
+.section-hero {
+  padding: 6rem 3.2rem;
+  background-color: #fcc419;
+}
+
+.hero-content {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero-paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 4.4rem;
+}
+
+.hero-customers-imgs {
+  display: flex;
+  align-items: center;
+}
+
+.hero-customer-img {
+  width: 9%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-left: -1.7rem;
+}
+
+.customers-span {
+  font-weight: 900;
+  color: #191402;
+}
+
+.hero-customer-img-para {
+  margin-left: 3.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-img {
+  width: 75%;
+  border-radius: 7px;
+  justify-self: center;
+  box-shadow: 0 1rem 1rem #191402;
+}
+
+.hero-grid {
+  column-gap: 8rem;
+}
+
+/* BENEFITS */
+
+.section-benefits {
+  padding: 12.8rem 3.2rem;
+  background-color: #191402;
+}
+
+.benefit:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.benefits-img {
+  width: 50%;
+  justify-self: center;
+  border-radius: 6px;
+  box-shadow: 0 0rem 1rem #fcc419;
+}
+
+.benefits-text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+}
+
+.benefit-number {
+  font-weight: 600;
+  font-size: 9.6rem;
+  margin-bottom: 3.2rem;
+  color: #4c3b07;
+}
+
+.benefits-img-left {
+  justify-self: center;
+}
+
+/* ACHIEVEMENTS */
+
+.section-achievements {
+  padding: 12.8rem 3.2rem;
+  background-color: #322705;
+  color: #f1f1f1;
+}
+
+.card {
+  background-color: #191402;
+  border-radius: 6px;
+  box-shadow: 0 0rem 1rem #fcc419;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  background-color: #eee;
+  color: #191402;
+  transform: translateY(-1rem);
+  box-shadow: 0 0rem 1rem #fff;
+}
+
+.card:hover h4 {
+  color: #4c3b07;
+}
+
+.card_img {
+  width: 100%;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card_text_box {
+  padding: 1.2rem 4rem 2rem;
+  text-align: center;
+}
+
+.list_of_achievements {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.achievement_icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.list_achievement_item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list_achievement_item:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.all_achievements {
+  text-align: center;
+}
+
+/* TESTIMONIALS */
+
+.section-testimonials {
+  padding: 9.6rem 3.2rem;
+  background-color: #fcc419;
+}
+
+.pre-heading--testimonials {
+  color: #4c3b07;
+}
+
+.heading-secondary--testimonials {
+  color: #191402;
+}
+
+.testimonial-card {
+  background-color: #191402;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem #191402;
+  transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-1rem) scale(1.1);
+  background-color: #f1f1f1;
+}
+
+.testimonial-card:hover .testimonial_text_box {
+  color: #191402;
+}
+
+.testimonial-card:hover .testimonial_author {
+  color: #322705;
+}
+
+.testimonial-card:hover .testimonial_author_designation {
+  color: #322705;
+}
+
+.testimonial_text_box {
+  color: #f1f1f1;
+  font-size: 1.6rem;
+  padding: 1.2rem 2rem;
+  margin-left: -2rem;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.testimonial_author {
+  color: #ccc;
+}
+
+.testimonial_author_designation {
+  color: #aaa;
+}
+
+.testimonial_img {
+  width: 30%;
+}
+
+/* PHOTOGALLERY */
+
+.section-pricing {
+  padding: 9.6rem 3.2rem;
+  background-color: #191402;
+}
+
+.price-card {
+  background-color: #fcc419;
+  border-radius: 11px;
+  position: relative;
+}
+
+.price-tag {
+  padding: 3.2rem 2.4rem 1.2rem;
+}
+
+.price-tag-text {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.price-span {
+  font-size: 7.2rem;
+  font-weight: 900;
+}
+
+.price-features {
+  padding: 1.2rem 2.4rem;
+}
+
+.plan-features {
+  list-style: none;
+  font-size: 1.8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.plan-features-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.plan-features-item-text {
+  margin: 0 auto;
+  transition: all 0.2s;
+}
+
+.plan-features-item-text:hover {
+  transform: scale(1.2);
+}
+
+.plan-features-item:not(:last-child) {
+  border-bottom: 1px solid #322705;
+}
+
+.plan-features-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.join_btn {
+  text-align: center;
+}
+
+.btn-price-card:link,
+.btn-price-card:visited {
+  background-color: #191402;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.btn-price-card:hover,
+.btn-price-card:active {
+  background-color: #f1f1f1;
+  color: #322705;
+  transform: scale(1.1);
+}
+
+.price-card-bestseller::after {
+  content: "Best seller";
+  font-size: 1.8rem;
+  font-weight: 900;
+  background-color: #4c3b07;
+  color: #fcc419;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 2rem;
+  right: -3.7rem;
+  transform: rotate(44deg);
+  border-radius: 3px;
+}
+
+/* CTA */
+
+.section-cta {
+  padding: 9.6rem 3.2rem;
+  background-image: linear-gradient(
+      105deg,
+      rgba(252, 195, 25, 0.801) 0%,
+      rgba(252, 195, 25, 0.808) 55%,
+      hsla(47, 85%, 5%, 0.808) 55%
+    ),
+    url(../img/cta-img.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.cta-section-pre-heading {
+  color: #322705;
+}
+
+.cta-section-heading-secondary {
+  color: #191402;
+  margin-bottom: 6rem;
+}
+
+.form_label {
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.form_label:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.form_input {
+  display: block;
+  width: 50%;
+  border: none;
+  padding: 1.2rem 2rem;
+  outline: none;
+  border-radius: 6px;
+  font-family: inherit;
+  background-color: #eee;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.form_input:focus {
+  border-bottom: 3px solid #4c3b07;
+}
+
+.form_input:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.sign_up_btn {
+  padding: 6rem 0rem;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 4.4rem 3.2rem;
+  background-color: #191402;
+}
+
+.footer_logo {
+  text-align: center;
+}
+
+.footer_logo_icon {
+  width: 12.8rem;
+  height: 12.8rem;
+  background-color: #322705;
+  color: #fcc419;
+  padding: 4rem;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+  transition: all 0.3s;
+}
+
+.footer_logo:hover .footer_logo_icon {
+  background-color: #eee;
+  color: #191402;
+}
+
+.footer_text {
+  text-align: center;
+}
+
+.footer_content {
+  font-size: 1.8rem;
+  color: #eee;
+}
+
+.footer_span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
